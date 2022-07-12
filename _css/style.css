@@ -1,0 +1,265 @@
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+html, body{
+	width: 100%;
+}
+
+/*== CLASSES AUXILIARES == */
+
+.clear{
+	clear: both;
+}
+
+.container{
+	max-width: 1280px;
+	margin: 0 auto;
+	padding:0 2%;
+}
+
+.box_texto{
+	max-width: 900px;
+	margin: 0 auto;
+	padding:0 2%;
+
+}
+
+.w60{
+	width: 60%;
+	float: left;
+}
+
+.w50{
+	width: 50%;
+	float: left;
+}
+
+.w40{
+	width: 40%;
+	float: left;
+}
+
+.w33{
+	float: left;
+	width: 33.3%;
+}
+
+.center{
+	text-align: center;
+}
+
+/*Classes site*/
+
+header{
+	width:  100%;
+	position:relative;
+	background-color: rgba(0,0,0, 0.75);
+	padding: 15px 0;
+	height: 50px;
+}
+
+.logo{
+	text-align: center;
+}
+
+.logo h6{
+	font-size: 20px;
+	color: #ff7101;
+	font-variant: small-caps;
+	font-family: 'Roboto', sans-serif;
+}
+
+.logo a{
+	text-decoration: none;
+}
+
+.overlay{
+	background: rgba(177, 180, 151, 0.25);
+	position:absolute;
+	width: 100%;
+	height:100%;
+	z-index: 1;
+	left:0;
+	top: 0;
+}
+
+/* == TITLE PAGE == */
+
+section.title_page{
+	min-height: 200px;
+	padding: 30px 0;
+	width: 100%;
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+section.title_page h2{
+	color: #ff7101;
+	margin-top: 10px;
+	font-family:Passager;
+	text-align:  justify;
+}
+
+section.title_page p{
+	margin-top: 7px;
+	color: white;
+}
+
+section.title_page > .container{
+	position: relative;
+	z-index: 2;
+}
+
+.overlay__title_page{
+	left:0;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: rgba(0,0,0, 0.50);
+}
+
+/* == SESSÃO CHAMADA == */
+
+section.texto-chamada i{
+	font-size: 30px;
+}
+
+section.texto-chamada{
+	margin: 2px 0;
+	padding:30px 0;
+	color: white;
+	text-align: center;
+	background: #273939;
+}
+
+section.texto-chamada h2,
+section.texto-chamada h4{
+	font-weight: normal;
+}
+
+section.texto-chamada h2 > strong{
+	color: #ff7101;
+}
+
+section.texto-chamada h4{
+	margin-bottom: 5px;
+}
+
+.circle{
+	width: 55px;
+	height:55px;
+
+	text-align: center;
+	line-height: 55px;
+	border-radius: 50%;
+	background-color: #ffffff;
+	box-shadow: 0 10px 25px 0 rgba(37, 15, 139, 0.1);
+
+	transform: translate(-50%,0);
+	position: absolute;
+	margin-top: -20px;
+	left: 50%;
+}
+
+.circle i{
+	font-size: 30px;
+	color: #7f835e;	
+
+	position: relative;
+	top: 5px;
+}
+
+/*== SESSÃO TRABALHOS == */
+
+section.loja{
+	padding: 50px 0 150px 0;
+}
+
+section.loja > .container{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.loja-wraper{
+	width: 33.3%;
+	padding: 25px;
+}
+
+.single-loja{
+	height: 100%;
+	border: 1px solid #ccc;
+	
+}
+
+.single-loja img{
+	width: 100%;
+}
+
+.single-loja h2{
+	font-size: 20px;
+	font-weight:normal;
+	text-align: center;
+	padding: 10px 7.5px;
+}
+
+.single-loja p{
+	padding:5px 10px;
+	font-size: 15px;
+	text-align: justify;
+	color: rgb(10,10,10);
+}
+
+.loja-wraper a{
+	width: 100%;
+	color: white;
+	display: block;
+	font-size: 17px;
+	text-align: center;
+	padding: 10px 7.5px;
+	text-decoration: none;
+	background: #273939;	
+	font-variant: small-caps;
+}
+
+/* ESTILIZAÇÃO FOOTER */
+
+footer.footer-01{
+    width: 100%;
+    height:310px;
+    margin-top: 75px;
+    background-image: url('../_imagens/footer-01.png');
+}
+
+footer.footer-02{
+    color: white;
+    padding: 30px 0;
+    background-color: #273939;
+    border-top: 2px dotted #FFFFFF;
+}
+
+.footerSingle a{
+    color: white;
+    text-decoration: none;
+}
+
+/* == RESPONSIVE DESIGN == */
+
+@media screen and (max-width: 800px){
+	.loja-wraper{
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 568px){
+	.loja-wraper{
+		width: 100%;
+	}
+}
